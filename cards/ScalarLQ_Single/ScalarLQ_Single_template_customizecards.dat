@@ -1,0 +1,13 @@
+set param_card MASS 9000006 $MASS
+set param_card DECAY 9000006 AUTO
+set param_card FRBLOCK 1 0.0
+# set param_card FRBLOCK 1 ${LAMBDA=1.0}
+set param_card FRBLOCK 2 0.0
+set param_card FRBLOCK 3 ${LAMBDA=1.0}
+# set param_card FRBLOCK 3 0.0
+set run_card bwcutoff ${BWCUTOFF=15}
+set run_card fixed_ren_scale T
+set run_card fixed_fac_scale T
+set run_card scale $MASS
+set run_card dsqrt_q2fact1 $MASS
+set run_card dsqrt_q2fact2 $MASS

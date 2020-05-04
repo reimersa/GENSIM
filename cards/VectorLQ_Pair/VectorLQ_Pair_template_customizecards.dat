@@ -1,0 +1,11 @@
+set param_card mass 9000002 $MASS
+set param_card decay 9000002 AUTO
+set param_card npcoup 1 ${KAPPA=1.0}
+set param_card npcoup 2 0.0
+set param_card npcoup 3 ${LAMBDA=1.0}
+set run_card bwcutoff ${BWCUTOFF=15}
+set run_card fixed_ren_scale T
+set run_card fixed_fac_scale T
+set run_card scale $MASS
+set run_card dsqrt_q2fact1 $MASS
+set run_card dsqrt_q2fact2 $MASS
