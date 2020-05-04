@@ -1,0 +1,7 @@
+*.root
+*.pyc
+*.*~
+cards/VectorLQ_*/VectorLQ*LOPDF31*.dat
+cards/ScalarLQ_*/ScalarLQ*LOPDF31*.dat
+commands/*.txt
+*.tar.xz
