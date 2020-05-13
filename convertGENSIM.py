@@ -391,7 +391,7 @@ def convertGENSIM(infiles,outfilename,Nmax=-1,isPythia=False):
         dy = abs(gps_tau[0].p4().Rapidity() - gps_tau[1].p4().Rapidity())
         tree_event.ditau_dy[0]     = dy
         tree_event.ditau_chi[0]    = exp(dy)
-        
+
       tree_event.st[0]           = st
       tree_event.st_met[0]       = stmet
       tree_mother.st[0]          = st
@@ -721,11 +721,11 @@ def cleanObjectCollection(objects, masks, dRmin):
   cleanObjects = [ ]
   dirtyObjects = [ ]
   for object in objects:
-    overlap = True
+    overlap = False
     for mask in masks:
         dR = deltaR(object.eta(),object.phi(),mask.eta(),mask.phi())
         if dR<dRmin:
-          overlap = False
+          overlap = True
           break
     if overlap:
       dirtyObjects.append(object)
